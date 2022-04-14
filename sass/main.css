@@ -1,0 +1,426 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #7B7A79;
+}
+
+body span {
+  color: #297281;
+}
+
+body .all {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 0.5em;
+      grid-template-areas: 'menubar main-content main-content main-content main-content';
+}
+
+body .all #menubar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: menubar;
+  background-color: #ececec;
+  height: auto;
+  width: 20em;
+}
+
+body .all #menubar .nav-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 10em;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+body .all #menubar .nav-img img {
+  margin-right: 0.5em;
+}
+
+body .all #menubar .nav-img .images_1 {
+  margin: 0.7em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .all #main-content {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 4;
+  grid-area: main-content;
+  color: #000000;
+  background-color: #F9F9F9;
+}
+
+body .all #main-content .search-tab {
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 1px 10px 23px #EBEEF2;
+          box-shadow: 1px 10px 23px #EBEEF2;
+  padding: 1em;
+}
+
+body .all #main-content .search-tab .se_inp {
+  width: 22em;
+  height: 4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border: 2px solid #FFFFFF;
+  border-radius: 1em;
+  padding-left: 0.5em;
+  -webkit-box-shadow: inset 3px 2px 3px rgba(209, 217, 230, 0.34), inset 3px 2px 3px rgba(209, 217, 230, 0.4), inset 3px 4px 10px rgba(209, 217, 230, 0.48), inset 3.5px 5px 6px rgba(209, 217, 230, 0.67), inset -2.5px -5px 7.5px rgba(255, 255, 255, 0.75), inset -2.5px -4px 5px rgba(255, 255, 255, 0.539141), inset -2.5px -4px 3.5px rgba(255, 255, 255, 0.44708), inset -5px -3.5px 3.5px rgba(255, 255, 255, 0.375);
+          box-shadow: inset 3px 2px 3px rgba(209, 217, 230, 0.34), inset 3px 2px 3px rgba(209, 217, 230, 0.4), inset 3px 4px 10px rgba(209, 217, 230, 0.48), inset 3.5px 5px 6px rgba(209, 217, 230, 0.67), inset -2.5px -5px 7.5px rgba(255, 255, 255, 0.75), inset -2.5px -4px 5px rgba(255, 255, 255, 0.539141), inset -2.5px -4px 3.5px rgba(255, 255, 255, 0.44708), inset -5px -3.5px 3.5px rgba(255, 255, 255, 0.375);
+}
+
+body .all #main-content .search-tab .se_inp .inp_ut {
+  border: 1px solid rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0);
+  width: 20em;
+  height: 4em;
+}
+
+body .all #main-content .common .health_concerns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body .all #main-content .common .health_concerns .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 0.5em;
+  margin: 0.2em;
+  width: 12em;
+  border-radius: 2.5em;
+  font-weight: bold;
+  background-color: #FFFFFF;
+}
+
+body .all #main-content .top_doctors .classification {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body .all #main-content .top_doctors .classification .cell {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 0.5em;
+  margin: 0.2em;
+  height: 5em;
+  border-radius: 1em;
+  font-weight: bold;
+  background-color: #FFFFFF;
+}
+
+body .all #main-content .top_doctors .doctor_detail .det {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body .all #main-content .top_doctors .doctor_detail .det .name-doc {
+  width: 19.4em;
+  padding: 0em;
+  margin: 1em;
+}
+
+body .all #main-content .top_doctors .doctor_detail .det .name-doc .doc_detail {
+  background-color: #FFFFFF;
+}
+
+body .all #main-content .top_doctors .doctor_detail .det .name-doc .doc_detail .section-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 18em;
+  background-color: #FFFFFF;
+  margin-top: -0.5em;
+  border-top-left-radius: 2em;
+}
+
+body .all #main-content .top_doctors .doctor_detail .det .name-doc .doc_detail .section-1 .greyy {
+  color: #7B7A79;
+  font-size: 0.65em;
+  margin-top: 0.3em;
+}
+
+body .all #main-content .top_doctors .doctor_detail .det .name-doc .doc_detail .section-1 .year {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 5em;
+  height: 1.3em;
+  padding: 0.1em;
+  border-radius: 5px;
+  background-color: #eeeeee;
+}
+
+body .all #main-content .top_doctors .doctor_detail .det .name-doc .doc_detail .section-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 18em;
+  padding-bottom: 0.5em;
+  background-color: #FFFFFF;
+  border-top-left-radius: 2em;
+  font-weight: bold;
+}
+
+body .all #main-content .top_doctors .doctor_detail .det .name-doc .doc_detail .section-2 .book-appointment-button {
+  padding: 1em;
+  border: 2px solid #297281;
+  color: #297281;
+  background-color: #FFFFFF;
+  border-radius: 2em;
+}
+
+body .all #main-content .top_doctors .doctor_detail .det .name-doc .doc_detail .section-2 .consult-now-button {
+  color: #FFFFFF;
+  padding: 1em;
+  width: 10em;
+  background-color: #297281;
+  border-radius: 2em;
+  border: 2px solid #297281;
+}
+
+@media only screen and (min-width: 581px) and (max-width: 1100px) {
+  body .all #main-content .top_doctors .classification {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 580px) {
+  body .all {
+    grid-gap: 0em;
+  }
+  body .all #menubar {
+    width: 7em;
+  }
+  body .all #menubar .docplus {
+    width: 5em;
+  }
+  body .all #menubar .nav-img {
+    font-size: 0.7em;
+  }
+  body .all #menubar .nav-img .images_1 img {
+    width: 1em;
+  }
+  body .all #main-content {
+    font-size: 0.7em;
+  }
+  body .all #main-content h1 {
+    font-size: 1.3em;
+  }
+  body .all #main-content h3 {
+    font-size: 1em;
+  }
+  body .all #main-content .search-tab {
+    padding: 0.5em;
+  }
+  body .all #main-content .search-tab .se_inp {
+    width: 17em;
+    height: 3em;
+  }
+  body .all #main-content .search-tab .se_inp img {
+    display: none;
+  }
+  body .all #main-content .search-tab .se_inp .inp_ut {
+    border: 1px solid rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 0);
+    width: 20em;
+    height: 4em;
+  }
+  body .all #main-content .top_doctors .classification {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .all #main-content .top_doctors .doctor_detail .det {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .all #main-content .top_doctors .doctor_detail .det .name-doc {
+    width: 13em;
+    margin: 0.5em;
+    margin-bottom: 1em;
+    margin-left: 0em;
+  }
+  body .all #main-content .top_doctors .doctor_detail .det .name-doc .doc_imgs {
+    width: 13em;
+  }
+  body .all #main-content .top_doctors .doctor_detail .det .name-doc .doc_detail .section-1 {
+    width: 13em;
+    padding: 0em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .all #main-content .top_doctors .doctor_detail .det .name-doc .doc_detail .section-1 .year {
+    width: 6em;
+  }
+  body .all #main-content .top_doctors .doctor_detail .det .name-doc .doc_detail .section-2 {
+    width: 13em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .all #main-content .top_doctors .doctor_detail .det .name-doc .doc_detail .section-2 .book-appointment-button {
+    font-size: 0.7em;
+    padding: 0.5em;
+    margin-bottom: 0.3em;
+  }
+  body .all #main-content .top_doctors .doctor_detail .det .name-doc .doc_detail .section-2 .consult-now-button {
+    padding: 0.5em;
+    width: 9em;
+    font-size: 0.7em;
+  }
+}
+/*# sourceMappingURL=main.css.map */

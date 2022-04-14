@@ -1,0 +1,284 @@
+@mixin disp{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+@mixin basic{
+    padding: 1em;
+    margin: 0.5em;
+    border-radius: 13px;
+    background: #FFFFFF;
+    box-shadow: 1px 10px 23px #EBEEF2;
+    font-size: 0.8em;
+    line-height: 2em;
+}
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #7B7A79;
+    span{
+        color: #297281;
+    }
+    .all{
+        display: grid;
+        grid-gap: 0.5em;
+        grid-template-areas: 
+        'menubar main-content main-content main-content main-content';
+        #menubar{
+            @include disp();
+            flex-direction: column;
+            justify-content: space-evenly;
+            grid-area: menubar;
+            // border: 2px solid red;
+            background-color: rgb(236, 236, 236);
+            height: auto;
+            width: 20em;
+            .nav-img{
+                @include disp();
+                flex-direction: column;
+                align-items: flex-start;
+                width: 10em;
+                font-size: 1.5em;
+                font-weight: bold;
+                img{
+                    margin-right: 0.5em;
+                }
+                .images_1{
+                    margin: 0.7em;
+                    display: flex;
+                    align-items: center;
+                    // justify-content: space-evenly;
+                }
+            }
+        }
+        #main-content{
+            grid-area: main-content;
+            // border: 2px solid blue;
+            // width: 75vw;
+            color: #000000;
+            background-color: #F9F9F9;
+            .search-tab{
+                background-color: #FFFFFF;
+                box-shadow: 1px 10px 23px #EBEEF2;
+                // width: 100%;
+                padding: 1em;
+                .se_inp{
+                    width: 22em;
+                    height: 4em;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    border: 2px solid #FFFFFF;
+                    border-radius: 1em;
+                    padding-left: 0.5em;
+                    // box-shadow: 2px -3px 4px grey;
+                    box-shadow: inset 3px 2px 3px rgba(209, 217, 230, 0.34), inset 3px 2px 3px rgba(209, 217, 230, 0.4), inset 3px 4px 10px rgba(209, 217, 230, 0.48), inset 3.5px 5px 6px rgba(209, 217, 230, 0.67), inset -2.5px -5px 7.5px rgba(255, 255, 255, 0.75), inset -2.5px -4px 5px rgba(255, 255, 255, 0.539141), inset -2.5px -4px 3.5px rgba(255, 255, 255, 0.44708), inset -5px -3.5px 3.5px rgba(255, 255, 255, 0.375);
+                    .inp_ut{
+                        border: 1px solid rgba(255, 255, 255, 0);
+                        background-color: rgba(255, 255, 255, 0);
+                        width: 20em;
+                        height: 4em;
+                    }
+                }
+            }
+            .common{
+                .health_concerns{
+                    @include disp();
+                    justify-content: space-evenly;
+                    .box{
+                        @include disp();
+                        justify-content: space-evenly;
+                        padding: 0.5em;
+                        margin: 0.2em;
+                        width: 12em;
+                        border-radius: 2.5em;
+                        font-weight: bold;
+                        background-color: #FFFFFF;
+                    }
+                }
+            }
+            .top_doctors{
+                .classification{
+                    @include disp();
+                    justify-content: space-evenly;
+                    .cell{
+                        @include disp();
+                        justify-content: space-evenly;
+                        padding: 0.5em;
+                        margin: 0.2em;
+                        height: 5em;
+                        border-radius: 1em;
+                        font-weight: bold;
+                        background-color: #FFFFFF;
+                    }
+                }
+                .doctor_detail{
+                    .det{
+                        @include disp();
+                        justify-content: space-evenly;
+                        .name-doc{
+                            width: 19.4em;
+                            padding: 0em;
+                            margin: 1em;
+                            .doc_detail{
+                                background-color: #FFFFFF;
+                                .section-1{
+                                    @include disp();
+                                    justify-content: space-evenly;
+                                    width: 18em;
+                                    background-color: #FFFFFF;
+                                    margin-top: -0.5em;
+                                    border-top-left-radius: 2em;
+                                    .greyy{
+                                        color: #7B7A79;
+                                        font-size: 0.65em;
+                                        margin-top: 0.3em;
+                                    }
+                                    .year{
+                                        @include disp;
+                                        justify-content: flex-start;
+                                        width: 5em;
+                                        height: 1.3em;
+                                        padding: 0.1em;
+                                        border-radius: 5px;
+                                        background-color: #eeeeee;
+                                    }
+                                }
+                                .section-2{
+                                    @include disp();
+                                    justify-content: space-evenly;
+                                    width: 18em;
+                                    padding-bottom: 0.5em;
+                                    background-color: #FFFFFF;
+                                    border-top-left-radius: 2em;
+                                    font-weight: bold;
+                                    .book-appointment-button{
+                                        padding: 1em;
+                                        border: 2px solid #297281;
+                                        color: #297281;
+                                        background-color: #FFFFFF;
+                                        border-radius: 2em;
+                                    }
+                                    .consult-now-button{
+                                        color: #FFFFFF;
+                                        padding: 1em;
+                                        width: 10em;
+                                        background-color: #297281;
+                                        border-radius: 2em;
+                                        border: 2px solid #297281;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    @media only screen and (min-width: 581px) and (max-width: 1100px){
+        .all{
+            #main-content{
+                .top_doctors{
+                    .classification{
+                        flex-direction: column;
+                    }
+                }
+            }
+        }
+    }
+    @media only screen and (min-width: 200px) and (max-width: 580px){
+        .all{
+            grid-gap: 0em;
+            #menubar{
+                width: 7em;
+                .docplus{
+                    width: 5em;
+                }
+                .nav-img{
+                    font-size: 0.7em;
+                    .images_1{
+                        img{
+                            width: 1em;
+                        }
+                    }
+                }
+            }
+            #main-content{
+                h1{
+                    font-size: 1.3em;
+                }
+                h3{
+                    font-size: 1em;
+                }
+                font-size: 0.7em;
+                .search-tab{
+                    padding: 0.5em;
+                    .se_inp{
+                        img{
+                            display: none;
+                        }
+                        width: 17em;
+                        height: 3em;
+                        .inp_ut{
+                            border: 1px solid rgba(255, 255, 255, 0);
+                            background-color: rgba(255, 255, 255, 0);
+                            width: 20em;
+                            height: 4em;
+                        }
+                    }
+                }
+                .top_doctors{
+                    .classification{
+                        flex-direction: column;
+                    }
+                    .doctor_detail{
+                        .det{
+                            flex-direction: column;
+                            .name-doc{
+                                width: 13em;
+                                margin: 0.5em;
+                                margin-bottom: 1em;
+                                margin-left: 0em;
+                                // font-size: 0.7em;
+                                .doc_imgs{
+                                    width: 13em;
+                                }
+                                .doc_detail{
+                                    .section-1{
+                                        width: 13em;
+                                        padding: 0em;
+                                        flex-direction: column;
+                                        justify-content: center;
+                                        // font-size: 1em;
+                                        .year{
+                                            width: 6em;
+                                        }
+                                    }
+                                    .section-2{
+                                        width: 13em;
+                                        flex-direction: column;
+                                        justify-content: center;
+                                        .book-appointment-button{
+                                            font-size: 0.7em;
+                                            padding: 0.5em;
+                                            margin-bottom: 0.3em;
+                                        }
+                                        .consult-now-button{
+                                            padding: 0.5em;
+                                            width: 9em;
+                                            font-size: 0.7em;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
